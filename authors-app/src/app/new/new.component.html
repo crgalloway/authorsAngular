@@ -1,0 +1,11 @@
+<p (click)='goHome()' class="blue"><u>Home</u></p>
+<p class="blue">Add a new author:</p>
+<div id="form">
+	<form (submit)='onSubmit()'>
+		<p>Name: <span id="error">{{ error }}</span></p>
+		<input type="Text" name="Name" [(ngModel)]="newAuthor.name">
+		<br>
+		<button (click)='goHome()' class="button">Cancel</button>
+		<a href="/"><input type="submit" Value="Submit" class="button"></a>
+	</form>
+</div>

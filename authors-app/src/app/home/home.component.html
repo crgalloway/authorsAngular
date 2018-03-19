@@ -1,0 +1,14 @@
+<p (click)='goNew()' class="blue"><u>Add an author</u></p>
+<p class="blue">We have quotes by:</p>
+<table>
+	<tbody>
+		<tr>
+			<td>Author</td>
+			<td>Actions Available</td>
+		</tr>		
+		<tr *ngFor='let each of authorList'>
+			<td class="blue">{{each.name}}</td>
+			<td><button (click)="editAuthor( each['_id'] )" class="button">Edit</button>&nbsp;<button (click)="deleteAuthor( each['_id'] )" class="button">Delete</button></td>
+		</tr>
+	</tbody>
+</table>

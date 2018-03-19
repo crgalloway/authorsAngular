@@ -1,0 +1,17 @@
+#error{
+	color: red;
+}
+.blue{
+	color: blue;
+}
+#form{
+	border: 1px solid black;
+	padding: 10px;
+	width: 30%;
+}
+.button{
+	margin: 5px;
+	color: white;
+	font-weight: bolder;
+	background-color: #66bbff
+}
