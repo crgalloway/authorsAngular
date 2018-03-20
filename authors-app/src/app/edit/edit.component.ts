@@ -31,13 +31,8 @@ export class EditComponent implements OnInit {
 		this._router.navigate(['/'])
 	}
 	onSubmit(){
-		if(this.authorName.name.length <= 3){
-			this.error = "Author names must be longer than 3 letters"
-		}
-		else{
-			this._httpService.updateAuthor(this.authorName).subscribe()
-			this.authorName = { name: ""}
-			this.goHome()
-		}
+		this._httpService.updateAuthor(this.authorName).subscribe()
+		this.authorName = { name: ""}
+		this.goHome()
 	}
 }

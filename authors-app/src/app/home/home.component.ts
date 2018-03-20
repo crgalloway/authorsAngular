@@ -35,4 +35,7 @@ export class HomeComponent implements OnInit {
 	goNew(){
 		this._router.navigate(['/new'])
 	}
+	viewQuotes(id){
+		this._router.navigate(['/quotes/'+id])
+	}
 }

@@ -1,0 +1,11 @@
+<p (click)='goHome()' class="blue"><u>Home</u></p>
+<p class="blue">Provide a quote by {{ author['name'] }}:</p>
+<div id="form">
+	<form (submit)="onSubmit( author['_id'] )">
+		<p>Quote: <span id="error">{{ error }}</span></p>
+		<input type="Text" name="Name" [(ngModel)]="newQuote.quote">
+		<br>
+		<button (click)='goHome()' class="button">Cancel</button>
+		<input type="submit" Value="Submit" class="button">
+	</form>
+</div>

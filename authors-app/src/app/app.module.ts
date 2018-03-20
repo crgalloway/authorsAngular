@@ -8,13 +8,17 @@ import { HomeComponent } from './home/home.component';
 import { NewComponent } from './new/new.component';
 import { EditComponent } from './edit/edit.component';
 import { FormsModule } from '@angular/forms';
+import { QuotesComponent } from './quotes/quotes.component';
+import { WriteComponent } from './write/write.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NewComponent,
-    EditComponent
+    EditComponent,
+    QuotesComponent,
+    WriteComponent
   ],
   imports: [
     BrowserModule,

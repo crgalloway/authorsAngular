@@ -8,7 +8,7 @@
 		</tr>		
 		<tr *ngFor='let each of authorList'>
 			<td class="blue">{{each.name}}</td>
-			<td><button (click)="editAuthor( each['_id'] )" class="button">Edit</button>&nbsp;<button (click)="deleteAuthor( each['_id'] )" class="button">Delete</button></td>
+			<td><button (click)="viewQuotes( each['_id'] )" class="button">View Quotes</button>&nbsp;<button (click)="editAuthor( each['_id'] )" class="button">Edit</button>&nbsp;<button (click)="deleteAuthor( each['_id'] )" class="button">Delete</button></td>
 		</tr>
 	</tbody>
 </table>

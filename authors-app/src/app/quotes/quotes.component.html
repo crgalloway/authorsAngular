@@ -1,0 +1,18 @@
+<p (click)='goHome()' class="blue"><u>Home</u></p>
+<p (click)='writeQuote( author["_id"])' class="blue"><u>Add a Quote</u></p>
+<p class="blue">Quotes by {{ author['name'] }}:</p>
+<table>
+	<tbody>
+		<tr>
+			<td>Quote</td>
+			<td>Votes</td>
+			<td>Actions Available</td>
+		</tr>		
+		<tr *ngFor='let each of author["quotes"]; let i = index'>
+			<td class="blue">{{ each.quote }}</td>
+			<td> {{ each.votes }}</td>
+			<td><button class="button" (click)="voteChange(author['_id'], i, 1)">Vote Up</button>&nbsp;<button class="button" (click)="voteChange(author['_id'], i, -1)">Vote down</button>&nbsp;<button class="button" (click)="quoteRemove(author['_id'], i)">Delete</button></td>
+			
+		</tr>
+	</tbody>
+</table>
